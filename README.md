@@ -1,6 +1,12 @@
 # wwkegerator
 kegerator code for raspberry pi
 
+code samples and bits taken from the following projects
+https://learn.adafruit.com/adafruit-keg-bot/raspberry-pi-code
+https://github.com/adafruit/Kegomatic
+https://codeascraft.com/2014/06/24/device-lab-checkout-rfid-style/
+https://github.com/etsy/rfid-checkout
+
 Requirements
 ------------
 NOTE: MAKE SURE TO CONVERT THE 5 VOLT SIGNAL TO THE RASPI TO 3.3 VOLTS BEFORE POWERING ON THE SYSTEM (Most card readers pull the line high, so even if not reading a card, it will send a 5 volt signal that can damage the RasPi)
