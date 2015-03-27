@@ -122,7 +122,7 @@ try:
                        fm.thisPour = 0.0
                     else:
                        #no valid card number in database
-                       pours.put_item(data={'cardnumber':card_int, 'datetime':currentTime, 'beverage':righttap, 'pour':-1})
+                       pours.put_item(data={'cardnumber':card_int, 'datetime':currentTime, 'beverage':righttap, 'pour':"-1"})
                        print "Invalid card:",card_int
                     bits = '0'
                     #break
