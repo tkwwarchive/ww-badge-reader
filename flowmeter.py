@@ -37,7 +37,7 @@ class FlowMeter():
     if (self.enabled == True and self.clickDelta < 1000):
       self.hertz = FlowMeter.MS_IN_A_SECOND / self.clickDelta
       if (self.hertz > FlowMeter.MIN_HZ and self.hertz < FlowMeter.MAX_HZ): # Only update the flow is fast enough, to avoid electrical shenanigans by the flow meters.
-        self.flow = self.hertz / (FlowMeter.SECONDS_IN_A_MINUTE * 7.5)  # In Liters per second
+        self.flow = self.hertz / (FlowMeter.SECONDS_IN_A_MINUTE * 15)  # was 7.5 In Liters per second
         instPour = self.flow * (self.clickDelta / FlowMeter.MS_IN_A_SECOND)  
         self.thisPour += instPour
         self.totalPour += instPour
