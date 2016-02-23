@@ -1,5 +1,5 @@
-# wwkegerator
-kegerator code for raspberry pi
+# Weddingwire badge reader projects
+code for raspberry pi to read HID cards and authorize access
 
 code samples and bits taken from the following projects
 https://learn.adafruit.com/adafruit-keg-bot/raspberry-pi-code
@@ -40,6 +40,11 @@ From the RFID Reader to the RasPi
 7. Run the main application (sudo required for GPIO access)
 
       sudo python ./kegerator.py 
+      
+      or
+      
+      sudo python ./vending.py
+      
 
 Parts List
 ----------
@@ -47,4 +52,5 @@ Parts List
  * SDCard for Raspberry PI OS: [tested with Raspbian - Wheezy] (http://www.raspberrypi.org/downloads/)
  * [5v to 3.3v converter] (https://www.adafruit.com/product/757) 
  * Site Compatible RFID Reader (http://www.amazon.com/gp/product/B0041X3GSU)
+ 
 
