@@ -23,6 +23,7 @@ From the RFID Reader to the RasPi
 2. Connect the USB Keyboard and serial LCD screen (either over USB, or using GPIO 14). Install the pyserial and boto library. 
 
       sudo pip install pyserial
+      
       sudo pip install boto
       
 3. Install the raspberry-gpio-python library.
