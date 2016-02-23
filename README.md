@@ -20,9 +20,10 @@ From the RFID Reader to the RasPi
       green/data0 -> pin 17 (after voltage conversion)
       white/data1 -> pin 18 (after voltage conversion)
 
-2. Connect the USB Keyboard and serial LCD screen (either over USB, or using GPIO 14). Install the pyserial library. 
+2. Connect the USB Keyboard and serial LCD screen (either over USB, or using GPIO 14). Install the pyserial and boto library. 
 
       sudo pip install pyserial
+      sudo pip install boto
       
 3. Install the raspberry-gpio-python library.
 
@@ -34,7 +35,8 @@ From the RFID Reader to the RasPi
 
       sudo ./hid_gpio_reader
 
-6. Run the main application (sudo required for GPIO access)
+6. Install the proper credentials for AWS access in ~root and ~pi
+7. Run the main application (sudo required for GPIO access)
 
       sudo python ./kegerator.py 
 
