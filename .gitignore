@@ -2,3 +2,4 @@
 __pycache__/
 *.py[cod]
 codes.txt
+hid_gpio_reader
